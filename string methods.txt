@@ -1,0 +1,14 @@
+String str = "Hello, World!";
+
+int length = str.length(); // 13
+char ch = str.charAt(0); // 'H'
+String sub = str.substring(0, 5); // "Hello"
+boolean equals = str.equals("Hello, World!"); // true
+boolean equalsIgnoreCase = str.equalsIgnoreCase("hello, world!"); // true
+boolean contains = str.contains("World"); // true
+int indexOf = str.indexOf('W'); // 7
+int lastIndexOf = str.lastIndexOf('o'); // 8
+String upper = str.toUpperCase(); // "HELLO, WORLD!"
+String lower = str.toLowerCase(); // "hello, world!"
+String trimmed = " Hello, World! ".trim(); // "Hello, World!"
+String replaced = str.replace('l', 'w'); // "Hewwo, Worwd!"
