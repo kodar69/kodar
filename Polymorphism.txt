@@ -1,0 +1,31 @@
+﻿Program to implement polymorphism and using proper access control
+
+class Animal {
+    protected void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    protected void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    protected void makeSound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class PolymorphismDemo {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        
+        dog.makeSound();
+        cat.makeSound();
+    }
+}

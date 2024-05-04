@@ -1,0 +1,17 @@
+﻿Program to demonstrate the instantiation of class and accessing the attributes using object of class
+
+public class ClassInstantiationDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.attribute = 10;
+        obj.displayAttribute();
+    }
+
+    static class MyClass {
+        int attribute;
+
+        void displayAttribute() {
+            System.out.println("Attribute value: " + attribute);
+        }
+    }
+}

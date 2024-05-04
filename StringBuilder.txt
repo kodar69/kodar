@@ -1,0 +1,19 @@
+﻿
+Program to demonstrate the uses of String and StringBuilder in java
+
+
+public class StringStringBuilderDemo {
+    public static void main(String[] args) {
+        String str = "Hello";
+        str += ", ";
+        str += "world";
+        System.out.println("Using String: " + str);
+
+        StringBuilder builder = new StringBuilder();
+        builder.append("Hello");
+        builder.append(", ");
+        builder.append("world");
+        System.out.println("Using StringBuilder: " + builder.toString());
+    }
+}
+
