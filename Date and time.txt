@@ -1,0 +1,48 @@
+LocalDate: Represents a date without a time zone.
+
+
+import java.time.LocalDate;
+
+public class Main {
+  public static void main(String[] args) {
+     LocalDate currentDate = LocalDate.now();
+     System.out.println("Current Date: " + currentDate);
+
+        LocalDate specificDate = LocalDate.of(2024, 5, 4);
+        System.out.println("Specific Date: " + specificDate);
+    }
+}
+
+
+LocalTime: Represents a time without a time zone.
+
+
+import java.time.LocalTime;
+
+public class Main {
+  public static void main(String[] args) {
+     LocalTime currentTime = LocalTime.now();
+     System.out.println("Current Time: " + currentTime);
+
+        LocalTime specificTime = LocalTime.of(14, 30, 45);
+        System.out.println("Specific Time: " + specificTime);
+    }
+}
+
+
+
+
+LocalDateTime: Represents a date and time without a time zone.
+
+import java.time.LocalDateTime;
+
+public class Main {
+  public static void main(String[] args) {
+     LocalDateTime currentDateTime = LocalDateTime.now();
+     System.out.println("Current Date and Time: " + currentDateTime);
+
+        LocalDateTime specificDateTime = LocalDateTime.of(2024, 5, 4, 14, 30, 45);
+        System.out.println("Specific Date and Time: " + specificDateTime);
+    }
+}
+
